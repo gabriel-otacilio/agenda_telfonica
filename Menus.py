@@ -12,6 +12,8 @@ def menu_add_contato():
 def menu_rm_contato():
     print('====================')
     entrada= input("digite o numero de telefone do contato a excluir")
+    Manipulates.rm_contato(entrada)
+    print(f'contato de numero:{entrada} foi removido da lista')
 
 def menu_listar_contatos():
     print('====================')

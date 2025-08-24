@@ -14,15 +14,15 @@ while True:
     menu()
     entrada = input("escolha uma opção")
     if entrada == "1":
-       Menus.menu_add_contato()
+       Menus.menu_add_contato()#check
     elif entrada == "2":
-        Menus.menu_rm_contato()
+        Menus.menu_rm_contato()#check
     #elif entrada == "3":
     elif entrada == "4":
-        Menus.menu_listar_contatos()
+        Menus.menu_listar_contatos()#check
     #elif entrada == "5":
-    #elif entrada == "0":
-    #    break
+    elif entrada == "0":
+        break
     else:
         print("opção invalida")
 

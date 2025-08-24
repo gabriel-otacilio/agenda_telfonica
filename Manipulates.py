@@ -21,5 +21,7 @@ def listar_contatos():
 
 
 def rm_contato(numero_tele):
-    contato = next((c for c in contatos if c["numero de telefone"] == numero_tele), None)
-    print(contato)
+    for i, d in enumerate(contatos):
+        if d["numero de telefone"]:
+            del contatos[i]
+            break
