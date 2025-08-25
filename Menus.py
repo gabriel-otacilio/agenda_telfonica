@@ -19,6 +19,13 @@ def menu_listar_contatos():
     print('====================')
     Manipulates.listar_contatos()
 
+def menu_find_contato():
+    print('====================')
+    numero=input('digite o numero do contato que deseja encontrar')
+    print(f'Eis o contato:')
+    print(f'{Manipulates.find_contato(numero)}')
+
+
 def menu_edit_contato():
     print('====================')
     numero_tel= input('digite o numero de telefone do contato a editar')

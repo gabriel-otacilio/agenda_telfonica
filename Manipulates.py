@@ -11,6 +11,10 @@ def adicionar_contato(nome, idade, email, numero_tel, endereco):
     contato1 = Contato(nome=nome, idade=idade, email=email, numero_de_tel=numero_tel, endereco=endereco)
     contatos.append(contato1.to_dict())
     # save()
+def find_contato(numero):
+    contato = next((d for d in contatos if d["numero de telefone"] == numero),None)
+    #retorna o primeiro dicionário que satisfaz a condição
+    return contato
 
 def listar_contatos():
     for c in contatos:

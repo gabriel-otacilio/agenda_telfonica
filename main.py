@@ -18,10 +18,11 @@ while True:
     elif entrada == "2":
         Menus.menu_rm_contato()#check
     elif entrada == "3":
-        Menus.menu_edit_contato()
+        Menus.menu_edit_contato()#TODO terminar esse método
     elif entrada == "4":
         Menus.menu_listar_contatos()#check
-    #elif entrada == "5":
+    elif entrada == "5":
+        Menus.menu_find_contato()#check
     elif entrada == "0":
         break
     else:
