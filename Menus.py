@@ -18,3 +18,20 @@ def menu_rm_contato():
 def menu_listar_contatos():
     print('====================')
     Manipulates.listar_contatos()
+
+def menu_edit_contato():
+    print('====================')
+    numero_tel= input('digite o numero de telefone do contato a editar')
+    print('campos:')
+    print('1.numero de telefone')
+    print('2.nome')
+    print('3.idade')
+    print('4.email')
+    print('5.endereço')
+
+    campo_editado= input('digite o numero do campo que vc quer editar')
+    edit=input('coloque aqui a edição')
+    if campo_editado == '1':
+        Manipulates.edit_contato(numero_tel,campo_editado,edit)
+
+    print(f'contato de numero de telefone:{numero_tel}, foi editado')
