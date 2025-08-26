@@ -2,6 +2,7 @@ import Manipulates
 
 
 def menu_add_contato():
+
     print("===================")
     nome = input("digite o nome do contato:")
     idade = input("digite a idade do contato")
@@ -11,19 +12,26 @@ def menu_add_contato():
     Manipulates.adicionar_contato(nome=nome, idade=idade, email=email, numero_tel=numero_tel, endereco=endereco)
 
 
+
+
 def menu_rm_contato():
+
     print('====================')
     entrada = input("digite o numero de telefone do contato a excluir")
     Manipulates.rm_contato(entrada)
     print(f'contato de numero:{entrada} foi removido da lista')
 
 
+
 def menu_listar_contatos():
+
     print('====================')
     Manipulates.listar_contatos()
 
 
+
 def menu_find_contato():
+
     print('====================')
     numero = input('digite o numero do contato que deseja encontrar')
     print(f'Eis o contato:')
@@ -31,6 +39,7 @@ def menu_find_contato():
 
 
 def menu_edit_contato():
+
     print('====================')
     numero_tel = input('digite o numero de telefone do contato a editar')
     print('campos:')
@@ -43,3 +52,4 @@ def menu_edit_contato():
     edit = input('coloque aqui a edição')
     Manipulates.edit_contato(numero_tel,campo_editado,edit)
     print(f'contato de numero de telefone:{numero_tel}, foi editado')
+

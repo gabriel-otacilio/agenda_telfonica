@@ -1,6 +1,5 @@
+import Manipulates
 import Menus
-#TODO introduzir o voltar nos menus
-#
 
 def menu():
     print('Bem vindo a sua agenda telefonica, por favor escolha uma das funcionalidades do sistema')
@@ -10,6 +9,8 @@ def menu():
     print("4.listar contatos")
     print("5.buscar contato")
     print("0.sair")
+
+
 
 
 while True:
@@ -26,6 +27,7 @@ while True:
     elif entrada == "5":
         Menus.menu_find_contato()  # check
     elif entrada == "0":
+        Manipulates.save()
         break
     else:
         print("opção invalida")
